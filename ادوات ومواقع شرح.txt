@@ -1,0 +1,9 @@
+اداه تسهل وتقلل من علمليات الاكواد داخل التطبيق
+Design Pattern
+رابط Design Pattern 
+https://www.codecheef.org/article/dynamic-crud-example-with-repository-design-pattern-in-laravel
+https://laracasts.com/discuss/channels/laravel/how-can-i-solve-target-apprepositoriesnewsrepository-is-not-instantiable-while-building-apphttpcontrollersmembernewscontroller?page=1&replyId=860293
+انشاء provider للتحكم بالاداه
+php artisan make:provider RepoServiceProvider
+انشاء جدول وسيط
+php artisan make:migration create_teacher_section_table --create=teacher_section

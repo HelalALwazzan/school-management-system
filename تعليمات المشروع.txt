@@ -1,0 +1,64 @@
+موقع تصميم قواعد البيانات
+https://laravelsd.com/
+
+
+
+composer update --ignore-platform-reqs
+
+ترجمة المشروع وعرض الصفحة حسب اللغة
+composer require mcamara/laravel-localization
+نشر ملفات الترجمة
+php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
+استخدام Authentication لواجة تسجيل الدخول
+composer require laravel/ui
+php artisan ui vue --auth
+npm install && npm run build
+الترجمة في قاعدة البيانات
+composer require spatie/laravel-translatable
+عرض رسالة بعد التنفيذ
+composer require yoeunes/toastr
+لمنع تكرار البيانات في قاعدة البيانات
+composer require codezero/laravel-unique-translation
+انشاء المديول الخاص بالجداول
+php artisan make:model Fee_invoice -m
+انشاء كنترول من نوع ريسورس
+php artisan make:controller Grades/GradeController --resource
+انشاء سيدر للتعامل مع الداتا
+php artisan make:model Nationalitie -m
+انشاء سيدر
+ php artisan make:seeder NationalitiesTableSeeder
+ تحديثات لقاعدة البيانات
+ php artisan migrate
+تحديثات قاعدة البيانات مع عمل تنظيف وتشغيل السيدرات
+php artisan mi:f --seed
+تشغيل السيدر باسمه
+php artisan db:seed --class=BloodTableSeeder    
+تفعيل السيدرات من DatabaseSeeder 
+  $this->call(BloodTableSeeder::class);
+تشغيل جميع السيدرات
+php artisan db:seed
+شرح livewire
+الفكرة هي عمل Request عن طريق السرفر يعني عشان يروح للسرفر بدون ما اعمل ريفرش للصفجة
+تثبيت livewire
+composer require livewire/livewire
+موقع شرح livewire
+https://laravel-livewire.com/docs/2.x/quickstart
+
+ مسح الذواكر المؤقته
+php artisan config:clear;
+php artisan config:cache;
+php artisan route:clear;
+php artisan route:cache;
+php artisan view:clear;
+php artisan view:cache;
+php artisan optimize:clear;
+مسح كل ذواكرة التخزين المؤقت
+php artisan optimize:clear
+  موقع تنزيل باكج زووم وشرحه
+https://github.com/MacsiDigital/laravel-zoom
+
+انشاء جدول
+php artisan make:migration create_tasks_table --create=tasks
+
+
+
